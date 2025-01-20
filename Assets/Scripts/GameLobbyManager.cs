@@ -48,9 +48,9 @@ public class GameLobbyManager : MonoBehaviour
         if (UnityServices.State != ServicesInitializationState.Initialized)
         {
             InitializationOptions initializationOptions = new InitializationOptions();
-            //initializationOptions.SetProfile(UnityEngine.Random.Range(0, 1000).ToString());
+            initializationOptions.SetProfile(UnityEngine.Random.Range(0, 1000).ToString());
 
-            await UnityServices.InitializeAsync();
+            await UnityServices.InitializeAsync(initializationOptions);
             await AuthenticationService.Instance.SignInAnonymouslyAsync();
         }
     }
@@ -191,7 +191,7 @@ public class GameLobbyManager : MonoBehaviour
             NetworkManager.Singleton.GetComponent<UnityTransport>().SetRelayServerData(new RelayServerData(allocation, "dtls"));
 
             GameMultiplayerManager.Instance.StartHost();
-            Loader.LoadNetwork(Loader.Scene.CharacterSelectScene);
+            Loader.LoadNetwork(Loader.Scene.LobbyScene);
         }
         catch (LobbyServiceException e)
         {
@@ -316,10 +316,5 @@ public class GameLobbyManager : MonoBehaviour
                 Debug.LogWarning(e);
             }
         }
-    }
-
-    public Lobby GetLobby()
-    {
-        return joinedLobby;
     }
 }

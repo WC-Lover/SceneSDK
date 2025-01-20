@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5938598412848839022}
   - component: {fileID: 7296373980712965822}
   m_Layer: 5
-  m_Name: Button
+  m_Name: KickButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3477660485811707891
 RectTransform:
   m_ObjectHideFlags: 0
@@ -154,8 +154,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: -36.9}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 7.9607, y: -30.625}
+  m_SizeDelta: {x: 181.9214, y: 37.449}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &335558587681344957
 CanvasRenderer:
@@ -288,8 +288,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17, y: -6.1}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 9.3732, y: 1.2444}
+  m_SizeDelta: {x: 184.7463, y: 35.3112}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8847967401035229139
 CanvasRenderer:
@@ -477,7 +477,7 @@ GameObject:
   - component: {fileID: 5785836156407330519}
   - component: {fileID: 6228849980166234149}
   m_Layer: 5
-  m_Name: LobbyPlayerPlaceholder
+  m_Name: LobbyPlayerTemplate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -578,10 +578,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 6656446938322548790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa2ddc94e7ddf8a4fb5164a06e03556c, type: 3}
+  m_Script: {fileID: 11500000, guid: 5d3a4066a7321cd4f8735a1254cb5217, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerIndex: 0
   readyGameObject: {fileID: 1939693993687792760}
   kickButton: {fileID: 7296373980712965822}
   playerNameText: {fileID: 7658262890622137804}

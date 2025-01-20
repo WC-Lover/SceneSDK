@@ -3,7 +3,7 @@ using Unity.Services.Lobbies.Models;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LobbyListSingleUI : MonoBehaviour
+public class SingleLobbyUI : MonoBehaviour
 {
 
     [SerializeField] private TextMeshProUGUI lobbyNameText;
@@ -11,12 +11,8 @@ public class LobbyListSingleUI : MonoBehaviour
 
     private void Awake()
     {
-
-        Debug.Log("Hello");
         GetComponent<Button>().onClick.AddListener(() =>
         {
-            Debug.Log(GameLobbyManager.Instance == null);
-            // GameLobbyManager is null wtf?
             GameLobbyManager.Instance.JoinWithId(lobby.Id);
         });
     }
