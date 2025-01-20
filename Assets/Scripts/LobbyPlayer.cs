@@ -23,7 +23,6 @@ public class LobbyPlayer : MonoBehaviour
     void Start()
     {
         kickButton.gameObject.SetActive(NetworkManager.Singleton.IsServer);
-        readyGameObject.SetActive(false);
     }
 
     public void SetLobbyPlayerData(PlayerData playerData)

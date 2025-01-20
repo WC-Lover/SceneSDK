@@ -52,7 +52,6 @@ public class LobbyUI : MonoBehaviour
     {
         foreach (Transform child in lobbyPlayersContainer)
         {
-            if (child == lobbyPlayerTemplate) continue;
             Destroy(child.gameObject);
         }
 
