@@ -1,8 +1,18 @@
-SDK is supposed to be used only for testing builds.
+Template is supposed to be used only for testing builds.
 There is no defence against penetrations or any other kinds of vulnerability.
 
-Starting from Main Menu, user can go into LobbyMenuScene, Options or Quit.
+## Main Menu
+Basic UI setup allowing player to change controlls(if needed), and direct to Lobby Menu.
 
-In LobbyMenuScene user can connect via CreateLobby(random name, no settings), QuickJoin, LobbyList which shows all the available lobbies(no filters added), JoinByCode(code is not shown in lobby!).
+## LobbyMenu
+SceneSDK provides crucial for multiplayer games possibility to:
+* Сhange NickName
+* Create Lobby
+* Quick Join Lobby
+* Join By Lobby Code 
+* Join via Lobby List
 
-In LobbyScene lobby players can be kicked and game can be started.
+## Lobby
+Lobby shows connected players and their status which can be changed by pressing ```Ready``` button.<br>
+Host has possibility to kick players.<br>
+Lobby proceeds to ```Game Scene``` when all players are marked as ```Ready```.
